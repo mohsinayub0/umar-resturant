@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Ruwudu:regular,500,600,700);
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif  ;
+    background-color: #154047;
+    color: #fdf;
+    overflow: auto;
+}
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    font-family: "Ruwudu", sans-serif;
+}
+nav {
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 75%;
+    padding:2px;
+    background: #175124;
+}
+nav ul {
+    justify-content: space-around;
+    list-style: none;
+    display: flex;
+}
+nav ul a {
+    text-decoration: none;
+    color: #fdf;
+    opacity: 0.9;
+}
+nav ul a:hover {
+    color: #fef;
+    opacity: 1;
+}
+table {
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    margin: 0 auto;
+    border: 2px solid #fef;
+    border-collapse: collapse;
+    background: #175124;
+}
+th, td {
+    background: #154047;
+    border: 2px solid #fef;
+    padding: 14px;
+    transition: all 0.3s ease-out;
+
+}
+th:hover, td:hover {
+    background: #fef;
+    color: #175124;
+}
+form {
+    border: 1px solid #fef;
+    padding: 10px;
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #175124;
+}
+
+form div {
+    margin: 10px;
+}
+
+form div input, form div input::placeholder {
+    background-color: #154047;
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    color: #fdf;
+    box-shadow: 3px 4px 4px #154047;
+    font-family: 'Poppins', sans-serif;
+}
+label {
+    font-size: 1.2rem;
+}
+form div textarea, form div textarea::placeholder {
+    box-shadow: 3px 4px 4px #154047;
+    background-color: #154047;
+    color: #fdf;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif  ;
+}
+
+button {
+    padding: 7px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0 0 4px #000;
+    color: #fdf;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+}
+
+form button:hover {
+    background: #fdf;
+    box-shadow: 0 0 4px #fdf;
+    color: #175124;
+        
+}
+
+section {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+section img {
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 170px;
+    height: 170px;
+    transition: all .3s ease-in-out;
+}
+
+section img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    margin: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 3px solid #fef;
+    text-align: center;
+    background: #175124;
+}
+
+p {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+/* Media Query for Small Screens (up to 600px) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+    nav {
+        width: 90%; /* Make the navigation bar wider for small screens */
+    }
+
+    table {
+        width: 100%; /* Make the table full width on small screens */
+    }
+
+    form {
+        width: 90%; /* Make the form wider for small screens */
+    }
+
+    section {
+        width: 90%; /* Adjust section width for small screens */
+    }
+    
+    /* ... Adjust other styles for small screens ... */
+}
+
+/* Media Query for Medium Screens (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles as needed for medium screens */
+    body {
+        font-size: 16px; /* Reset font size for medium screens */
+    }
+
+
+    /* ... Adjust other styles for medium screens ... */
+}
+
+/* Media Query for Large Screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    /* Adjust styles as needed for large screens */
+    body {
+        font-size: 18px; /* Increase font size for large screens */
+    }
+
+    /* ... Adjust other styles for large screens ... */
+}
